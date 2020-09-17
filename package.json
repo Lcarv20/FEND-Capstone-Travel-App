@@ -1,0 +1,26 @@
+{
+  "name": "fend-capstone-travel-app",
+  "version": "1.0.0",
+  "description": "Travel App for the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lcarv20/FEND-Capstone-Travel-App.git"
+  },
+  "keywords": [
+    "travel",
+    "travel-planner",
+    "weather",
+    "destination-weather",
+    "destination-picture"
+  ],
+  "author": "lcarv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lcarv20/FEND-Capstone-Travel-App/issues"
+  },
+  "homepage": "https://github.com/Lcarv20/FEND-Capstone-Travel-App#readme"
+}
