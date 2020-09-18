@@ -2,6 +2,7 @@ const express = require("express")
 const app = express()
 const cors = require("cors")
 const bodyParser = require("body-parser")
+require("dotenv").config()
 
 //Dependecies
 app.use(cors())
@@ -12,7 +13,7 @@ app.get("/", (req, res) => {
 	res.send("Hurray it works")
 })
 
-const port = 8080
+const port = process.env.PORT
 
 app.listen(port, () => {
 	console.log("running on port: " + port)
