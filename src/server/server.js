@@ -9,8 +9,10 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+app.use(express.static("dist"))
+
 app.get("/", (req, res) => {
-	res.send("Hurray it works")
+	console.log("Hurray it works")
 })
 
 const port = process.env.PORT
