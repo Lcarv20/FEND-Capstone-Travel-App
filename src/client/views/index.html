@@ -3,9 +3,26 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Weather Checker</title>
 	</head>
-	<body>
-		<h1>It is working</h1>
+	<body class="preload">
+		<div class="grid-container">
+			<header class="header flex-container">
+				<h1 class="title">Weather Checker</h1>
+			</header>
+			<section class="form-wrapper flex-container">
+				Destination:
+				<input
+					type="text"
+					name="city"
+					id="destination"
+					placeholder="ex.: Madrid"
+				/>
+				Date:
+				<input type="date" name="date" id="date" placeholder="DD.MM.YYYY" />
+				<button class="btn">Add</button>
+			</section>
+			<section class="result-board">Result Board</section>
+		</div>
 	</body>
 </html>

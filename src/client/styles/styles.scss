@@ -1,3 +1,38 @@
+$mainColor: rgb(101, 8, 138);
+
 h1 {
-	color: blue;
+	text-align: center;
+}
+
+.form-wrapper {
+	border: 1px solid slateblue;
+}
+
+.btn {
+	border: 1px solid $mainColor;
+	background-color: white;
+	padding: 14px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	color: slateblue;
+	transition: 0.3s;
+	border-radius: 5px;
+	width: 25%;
+	margin-right: 1em;
+}
+
+.btn:hover {
+	color: white;
+	background-color: $mainColor;
+}
+
+#destination,
+#date {
+	font-size: 1em;
+	outline-style: none;
+	text-align: center;
+	border: 2px solid $mainColor;
+	width: 50%;
+	height: 3em;
+	border-radius: 5px;
 }

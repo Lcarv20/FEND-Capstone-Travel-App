@@ -1,0 +1,63 @@
+/* Only to remove transition effect on loading */
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+/*---------------------------------------------*/
+
+/*-----------------Mixins---------------------*/
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+/*---------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+	margin: 0;
+	background-color: rgb(101, 8, 138);
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+}
+
+.grid-container {
+	display: grid;
+	height: 96vh;
+	margin: 2vh 0;
+	grid-template-columns: 1fr;
+	grid-template-rows: 15% 30% auto;
+	grid-template-areas:
+		"header"
+		"form"
+		"result";
+
+	header {
+		grid-area: header;
+		border-radius: 5px 5px 0 0;
+		background-color: white;
+	}
+
+	section.form-wrapper {
+		grid-area: form;
+		background-color: white;
+	}
+
+	section.result-board {
+		grid-area: result;
+		background-color: white;
+		border-radius: 0 0 5px 5px;
+	}
+
+	.flex-container {
+		@include flexbox();
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}

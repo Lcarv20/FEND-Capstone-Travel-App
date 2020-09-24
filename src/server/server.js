@@ -11,7 +11,8 @@ app.use(bodyParser.json())
 
 app.use(express.static("dist"))
 
-app.get("/", (req, res) => {
+app.get("/get", (req, res) => {
+	res.send("Hola")
 	console.log("Hurray it works")
 })
 
