@@ -1,11 +1,9 @@
 $mainColor: rgb(101, 8, 138);
 
-h1 {
+h1,
+.result-board > h2 {
 	text-align: center;
-}
-
-.form-wrapper {
-	border: 1px solid slateblue;
+	padding: 1rem 0;
 }
 
 .btn {
@@ -18,7 +16,6 @@ h1 {
 	transition: 0.3s;
 	border-radius: 5px;
 	width: 25%;
-	margin-right: 1em;
 }
 
 .btn:hover {
@@ -26,8 +23,25 @@ h1 {
 	background-color: $mainColor;
 }
 
+.print-btn,
+.del-btn {
+	border: none;
+	background-color: transparent;
+	color: $mainColor;
+	font-size: 2rem;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.print-btn {
+	padding-right: 1rem;
+	text-align: right;
+	position: relative;
+	bottom: 3rem;
+}
+
 #destination,
-#date {
+#departureDate {
 	font-size: 1em;
 	outline-style: none;
 	text-align: center;
@@ -35,4 +49,27 @@ h1 {
 	width: 50%;
 	height: 3em;
 	border-radius: 5px;
+}
+
+.trip {
+	border: 1px solid $mainColor;
+	border-radius: 5px;
+	margin: 2em;
+	box-shadow: 4px 4px 10px lightgray;
+	text-align: center;
+
+	.destination-image {
+		position: relative;
+		height: 200px;
+		background-size: cover;
+
+		.image-title {
+			background-color: rgba(0, 0, 0, 0.7);
+			color: white;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			font-size: 1.5rem;
+		}
+	}
 }

@@ -18,11 +18,17 @@
 					id="destination"
 					placeholder="ex.: Madrid"
 				/>
-				Date:
-				<input type="date" name="date" id="date" placeholder="DD.MM.YYYY" />
-				<button class="btn">Add</button>
+				Departure Date:
+				<input
+					type="date"
+					name="date"
+					id="departureDate"
+					placeholder="MM.DD.YYYY"
+				/>
+				<button class="btn" onclick="Client.formDataGetter()">Add</button>
 			</section>
-			<section class="result-board">Result Board</section>
+
+			<section class="result-board"></section>
 		</div>
 	</body>
 </html>
