@@ -4,6 +4,7 @@ const cors = require("cors")
 const bodyParser = require("body-parser")
 require("dotenv").config()
 const fetch = require("node-fetch")
+const getRandomInt = require("./helpers")
 
 //Personal keys and details
 const weatherBit = process.env.APIKEY_WEATHERBIT
@@ -84,9 +85,6 @@ async function dataFetcher(location, timeRemaining) {
 }
 
 //To randomize images
-function getRandomInt(max) {
-	return Math.floor(Math.random() * Math.floor(max))
-}
 
 // ---------------------------
 
